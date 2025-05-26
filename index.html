@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,700;1,700&family=Roboto:wdth,wght@85.8,244&family=Tai+Heritage+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Xellshop</h1>
+  </header>
+    
+  <nav class="navbar">
+      <div class="container-fluid justify-content-center">
+        <a role="button" class="navbar-brand btn btn-info" id="inicio" >Home</a>
+        <a href="#celulares" role="button" class="navbar-brand btn btn-info" >Celulares</a>
+        <a href="#resena" role="button" class="navbar-brand btn btn-info" >Reseñas</a>
+        <a href="#contacto" role="button" class="navbar-brand btn btn-info" >Contacto</a>
+      </div>
+  </nav>
+    
+    <main>
+
+      <h2><p> Tu tienda de confianza en tecnología móvil</p></h2>
+
+    </main>
+
+<section id="celulares">
+  <h2 >Celulares</h2>
+  <div class="contenedor">
+  <div class="productos-container">
+    <div class="card">
+      <img src="./productos/s25.png" alt="s25">
+      <h3>Samsung S25</h3>
+      <p>Pantalla HD, 64GB, Cámara 12MP</p>
+      <button>Ver más</button>
+    </div>
+
+    <div class="card">
+      <img src="./productos/s24u.jpg" alt="Celular 2">
+      <h3>Samsung S24 Ultra</h3>
+      <p>Pantalla FHD, 128GB, Cámara 48MP</p>
+      <button>Ver más</button>
+    </div>
+    
+
+    <div class="card">
+      <img src="./productos/rm10.jpg" alt="Celular 3">
+      <h3>Redmagic 10 pro</h3>
+      <p>Pantalla AMOLED, 256GB, Cámara 64MP</p>
+      <button>Ver más</button>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<section id="resena">
+  <h2 class="">Reseñas</h2>
+  <div class="contenedor">
+  <div class="grid-resenas">
+    <div class="resena" class="card">
+      <h3 class="estrellas">Juan Pérez</h3>
+      <p>"Excelente atención y productos de calidad. Compré mi celular y llegó rápido."</p>
+      <span class="estrellas">⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="resena">
+      <h3 class="estrellas">María García</h3>
+      <p>"Gran variedad de equipos. Muy buena experiencia de compra."</p>
+      <span class="estrellas">⭐⭐⭐⭐</span>
+    </div>
+    <div class="resena">
+      <h3 class="estrellas">Carlos López</h3>
+      <p>"Tuve un problema con el envío, pero el soporte lo resolvió enseguida."</p>
+      <span class="estrellas">⭐⭐⭐⭐</span>
+    </div>
+  </div>
+  </div>
+</section>
+
+<footer>
+
+<body>
+
+  <form action="https://formspree.io/f/mgvkjzkn" method="POST" id="contacto">
+    <h2>Contáctanos</h2>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <input id="mensaje" name="mensaje" rows="5"></input>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+  <div class="footer-contenido">
+    <a href="#inicio" class="btn-retorno">⬆ Volver al inicio</a>
+  </div>
+
+
+</body> 
+
+ </footer>
+</body>
+</html>
