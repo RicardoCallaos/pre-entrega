@@ -1,117 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,700;1,700&family=Roboto:wdth,wght@85.8,244&family=Tai+Heritage+Pro:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META -->
+  <title>Xellshop - Tienda de tecnología móvil</title>
+  <meta name="description" content="Xellshop es tu tienda de confianza en tecnología móvil. Descubrí los mejores celulares al mejor precio.">
+  <meta name="keywords" content="Xellshop, celulares, tecnología, tienda online, smartphones">
+  <meta name="author" content="Xellshop">
+
+  <!-- Accesibilidad / UX -->
+  <meta name="theme-color" content="#0d6efd">
+
+  <!-- Fuentes y estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,700;1,700&family=Roboto:wdth,wght@85.8,244&family=Tai+Heritage+Pro:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" role="banner">
     <h1>Xellshop</h1>
   </header>
-    
-  <nav class="navbar">
-      <div class="container-fluid justify-content-center">
-        <a role="button" class="navbar-brand btn btn-info" id="inicio" >Home</a>
-        <a href="#celulares" role="button" class="navbar-brand btn btn-info" >Celulares</a>
-        <a href="#resena" role="button" class="navbar-brand btn btn-info" >Reseñas</a>
-        <a href="#contacto" role="button" class="navbar-brand btn btn-info" >Contacto</a>
-      </div>
+
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container-fluid justify-content-center">
+      <a role="button" class="navbar-brand btn btn-info" id="inicio" tabindex="0">Inicio</a>
+      <a href="#celulares" role="button" class="navbar-brand btn btn-info" tabindex="0">Celulares</a>
+      <a href="#resena" role="button" class="navbar-brand btn btn-info" tabindex="0">Reseñas</a>
+      <a href="#contacto" role="button" class="navbar-brand btn btn-info" tabindex="0">Contacto</a>
+    </div>
   </nav>
-    
-    <main>
 
-      <h2><p> Tu tienda de confianza en tecnología móvil</p></h2>
+  <main role="main">
+    <h2><p>Tu tienda de tecnología móvil de confianza</p></h2>
+  </main>
 
-    </main>
+  <h2 id="celulares">Celulares</h2>
 
-<section id="celulares">
-  <h2 >Celulares</h2>
-  <div class="contenedor">
-  <div class="productos-container">
-    <div class="card">
-      <img src="./productos/s25.png" alt="s25">
-      <h3>Samsung S25</h3>
-      <p>Pantalla HD, 64GB, Cámara 12MP</p>
-      <button>Ver más</button>
+  <div id="productos" class="productos-container" aria-live="polite"></div>
+
+  <section id="resena" aria-label="Reseñas de clientes">
+    <h2>Reseñas</h2>
+    <div class="contenedor">
+      <div class="grid-resenas">
+        <div class="resena card" tabindex="0">
+          <h3 class="estrellas">Juan Pérez</h3>
+          <p>"Excelente servicio y productos de calidad. Compré mi teléfono y llegó rápido."</p>
+          <span class="estrellas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="resena" tabindex="0">
+          <h3 class="estrellas">María García</h3>
+          <p>"Gran variedad de dispositivos. Excelente experiencia de compra."</p>
+          <span class="estrellas">⭐⭐⭐⭐</span>
+        </div>
+        <div class="resena" tabindex="0">
+          <h3 class="estrellas">Carlos López</h3>
+          <p>"Tuve un problema con el envío, pero el soporte lo solucionó enseguida."</p>
+          <span class="estrellas">⭐⭐⭐⭐</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="./productos/s24u.jpg" alt="Celular 2">
-      <h3>Samsung S24 Ultra</h3>
-      <p>Pantalla FHD, 128GB, Cámara 48MP</p>
-      <button>Ver más</button>
+  <footer role="contentinfo">
+    <form action="https://formspree.io/f/mgvkjzkn" method="POST" id="contacto" aria-label="Formulario de contacto">
+      <h2>Contáctanos</h2>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required aria-required="true" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-required="true" />
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="footer-contenido">
+      <a href="#inicio" class="btn-retorno" aria-label="Volver al inicio">⬆ Volver a inicio</a>
     </div>
-    
+  </footer>
 
-    <div class="card">
-      <img src="./productos/rm10.jpg" alt="Celular 3">
-      <h3>Redmagic 10 pro</h3>
-      <p>Pantalla AMOLED, 256GB, Cámara 64MP</p>
-      <button>Ver más</button>
+  <!-- Botones flotantes -->
+  <button id="verCarrito" class="boton-flotante btn btn-primary" aria-label="Ver carrito de compras">
+    🛒 Ver carrito <span id="contadorCarrito" class="badge bg-light text-dark">0</span>
+  </button>
+
+  <button id="btnVaciarCarrito" class="boton-flotante btn btn-warning vaciar" aria-label="Vaciar carrito">
+    🗑️ Vaciar carrito
+  </button>
+
+  <!-- Modal del carrito -->
+  <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCarritoLabel">Tu carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body" id="contenidoModalCarrito" tabindex="0" aria-live="polite"></div>
+      </div>
     </div>
   </div>
-  </div>
-</section>
 
-
-<section id="resena">
-  <h2 class="">Reseñas</h2>
-  <div class="contenedor">
-  <div class="grid-resenas">
-    <div class="resena" class="card">
-      <h3 class="estrellas">Juan Pérez</h3>
-      <p>"Excelente atención y productos de calidad. Compré mi celular y llegó rápido."</p>
-      <span class="estrellas">⭐⭐⭐⭐⭐</span>
-    </div>
-    <div class="resena">
-      <h3 class="estrellas">María García</h3>
-      <p>"Gran variedad de equipos. Muy buena experiencia de compra."</p>
-      <span class="estrellas">⭐⭐⭐⭐</span>
-    </div>
-    <div class="resena">
-      <h3 class="estrellas">Carlos López</h3>
-      <p>"Tuve un problema con el envío, pero el soporte lo resolvió enseguida."</p>
-      <span class="estrellas">⭐⭐⭐⭐</span>
-    </div>
-  </div>
-  </div>
-</section>
-
-<footer>
-
-<body>
-
-  <form action="https://formspree.io/f/mgvkjzkn" method="POST" id="contacto">
-    <h2>Contáctanos</h2>
-
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="mensaje">Mensaje:</label>
-    <input id="mensaje" name="mensaje" rows="5"></input>
-
-    <button type="submit">Enviar</button>
-  </form>
-
-
-  <div class="footer-contenido">
-    <a href="#inicio" class="btn-retorno">⬆ Volver al inicio</a>
-  </div>
-
-
-</body> 
-
- </footer>
+  <!-- JS -->
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 
 
 header {
-    background-color:rgb(205, 205, 68);
+    background-color:rgb(66, 47, 232);
     width: 80%;
     margin: auto;
     text-align: center;
@@ -82,8 +82,8 @@ margin-top: 30px;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-}
 
+}
 .card button:hover {
   background-color: #1e5bbf;
 }
@@ -196,22 +196,19 @@ button:hover {
 
 }
 
-.footer-contenido {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  z-index: 9999;
 }
 
-.btn-derecha {
-  background-color: #2a7de1;
-  color: rgb(31, 4, 4);
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+/* Botón "Ver carrito" - más a la derecha */
+#verCarrito {
+  margin-bottom: 50px;
+  right: 50px;
 }
 
-.btn-derecha:hover {
-  background-color: #1c5bb7;
+/* Botón "Vaciar carrito" - un poco más a la izquierda */
+#btnVaciarCarrito {
+  right: 50px;
 }
